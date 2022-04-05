@@ -18,7 +18,7 @@ alias p2="python2"
 
 # create sample file fast
 alias txt="touch sample.txt"
-alias sh="touch sample.sh && chmod +x sample.sh"
+alias bsh="touch sample.sh && chmod +x sample.sh"
 
 # print cuurent dir
 alias p="pwd | lolcat"
