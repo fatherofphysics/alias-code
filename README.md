@@ -1,0 +1,2 @@
+# alias-code
+alias code
