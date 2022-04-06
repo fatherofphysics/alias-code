@@ -47,9 +47,9 @@ alias root="sudo su"
 alias s="sudo"
 
 ## Pkg install & system update 
-alias ai="sudo apt install"
-alias update="sudo apt update"
-alias upgrade="sudo apt upgrade"
+alias i="sudo apt install"
+alias up="sudo apt update"
+alias ug="sudo apt upgrade"
 alias rv="sudo apt remove"
 
 # Stop after sending count ECHO_REQUEST packets
