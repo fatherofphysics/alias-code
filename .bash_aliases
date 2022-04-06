@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # bash code place to /home/$USER/ && add to the ~/.bashrc or zsh etc.
 
