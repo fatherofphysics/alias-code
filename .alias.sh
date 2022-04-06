@@ -47,9 +47,10 @@ alias root="sudo su"
 alias s="sudo"
 
 ## Pkg install & system update 
-alias ai="sudo apt-get install"
-alias update="sudo apt-get update"
-alias upgrade="sudo apt-get upgrade"
+alias ai="sudo apt install"
+alias update="sudo apt update"
+alias upgrade="sudo apt upgrade"
+alias rv="sudo apt remove"
 
 # Stop after sending count ECHO_REQUEST packets
 alias ping="ping -c 5"
