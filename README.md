@@ -1,2 +1,3 @@
-# alias-code
+# Debain alias-code
 alias code
+SHORTCUTS
