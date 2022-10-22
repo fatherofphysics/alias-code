@@ -1,3 +1,3 @@
-# Debain alias-code
+# Debian alias-code
 alias code
 SHORTCUTS
