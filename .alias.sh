@@ -27,8 +27,8 @@ alias p="pwd | lolcat"
 alias mi="micro"
 
 # File creation
-alias md="sudo mkdir"
-alias mf="sudo touch"
+alias md="mkdir"
+alias mf="touch"
 
 # Use git clone fast
 alias gc="git clone"
@@ -57,3 +57,6 @@ alias pi="sudo ping -c 3"
 
 # Do not wait interval 1 second, go fast
 alias fastpi="sudo ping -i 0.1 -c 5"
+
+
+
