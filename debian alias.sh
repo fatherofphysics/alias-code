@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# bash code place to /home/$USER/ && add to the ~/.bashrc or zsh etc.
+# bash code place to /home/$USER/ && add to the ~/.bashrc or ~/.zshrc etc.
 
 # creating custom alias aka shortcut keys
 alias ..="cd .."
@@ -17,8 +17,8 @@ alias p3="python3"
 alias p2="python2"
 
 # create sample file fast
-alias txt="sudo touch sample.txt"
-alias bsh="sudo touch sample.sh && chmod +x sample.sh"
+alias txt="touch sample.txt"
+alias bsh="touch sample.sh && chmod +x sample.sh"
 
 # print cuurent dir
 alias p="pwd | lolcat"
@@ -57,6 +57,10 @@ alias pi="sudo ping -c 3"
 
 # Do not wait interval 1 second, go fast
 alias fastpi="sudo ping -i 0.1 -c 5"
+
+# openvpn
+alias vpn="sudo openvpn /opt/file.ovpn"
+
 
 
 
