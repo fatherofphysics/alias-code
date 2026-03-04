@@ -62,8 +62,8 @@ alias fastpi="sudo ping -i 0.1 -c 5"
 alias vpn="sudo openvpn /opt/file.ovpn"
 
 # Pentest alias
-alias r='function rust(){ rustscan --ulimit 5000 -g -a "$1" > rust.tcp; rustscan --ulimit 5000 --udp -g -a "$1" > rust.udp; }; rust'
-alias n='function nmap-scan() {
+# Rustscan
+r() {
     ip="$1"
 
     if [ -z "$ip" ]; then
@@ -71,10 +71,21 @@ alias n='function nmap-scan() {
         return 1
     fi
 
-    # Extract TCP ports
+    rustscan --ulimit 5000 -g -a "$ip" > rust.tcp
+    rustscan --ulimit 5000 --udp -g -a "$ip" > rust.udp
+}
+
+# Nmap scan from rust output
+n() {
+    ip="$1"
+
+    if [ -z "$ip" ]; then
+        echo "Usage: n <ip>"
+        return 1
+    fi
+
     tcp_ports=$(grep -oP '\[\K[0-9,]+' rust.tcp 2>/dev/null)
 
-    # Extract UDP ports only if file exists and not empty
     if [ -f rust.udp ] && [ -s rust.udp ]; then
         udp_ports=$(grep -oP '\[\K[0-9,]+' rust.udp)
     else
@@ -95,7 +106,7 @@ alias n='function nmap-scan() {
     else
         echo "[*] No UDP ports found. Skipping UDP."
     fi
-}; nmap-scan'
+}
 
 
 
