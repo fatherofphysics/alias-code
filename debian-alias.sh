@@ -98,7 +98,7 @@ n() {
     fi
 
     echo "[+] TCP Scan → $ip : $tcp_ports"
-    nmap -sC -sV -p "$tcp_ports" "$ip" -oN nmap-scan.tcp
+    nmap -sC -sV -p "$tcp_ports"  "$ip" scans/nmap-tcpscripts -oN nmap-scan.tcp
 
     if [ -n "$udp_ports" ]; then
         echo "[+] UDP Scan → $ip : $udp_ports"
